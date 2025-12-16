@@ -1,0 +1,20 @@
+# ESP-IDF build output
+build/
+
+# Managed components (werden automatisch geladen)
+managed_components/
+
+# IDF environment & cache
+.idf/
+.cache/
+
+# Backup files
+*~
+*.swp
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Old sdkconfig backups
+sdkconfig.old
