@@ -11,4 +11,5 @@ Usage:
 Mouse and keyboard:
 
 The mouse and keyboard inputs are made via Bluetooth. Unfortunately, the ESP32S3 cannot use classic Bluetooth, only BLE. However, since I don't have any BLE mice or keyboards, the support was solved a little differently. I use a cheap ESP32 (not S3) board and run firmware on it that connects to all HID input devices in the vicinity (they must be in pairing mode to start). Once the devices are connected, all HID events (i.e., all mouse movements or keyboard inputs) are output via the serial interface (UART). This ESP32 board is connected to the Waveshare display via UART (4 cables) (GND -> GND, 3.3V -> 3.3V, ESP32 RX -> ESP32 TX, and ESP32 TX -> ESP32 RX). The ESP32 receives the data from the ESP32 and forwards it to the emulator (see the process in the video). 
-The Bluetooth firmware for the ESP32 is located in a separate project. ()
+
+The Bluetooth firmware for the ESP32 is located in a separate project (https://github.com/uliuc/esp32_bluetooth_host_hid_to_uart). You must compile this project and install it on the ESP32. Then connect it to the Waveshare board via UART. However, make sure to either adjust the names of the Bluetooth devices to be connected (in the sources, file esp_hid_host_main.c) or disable the CONFIG_BT_HID_HOST_ENABLED option. 
