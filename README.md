@@ -1,5 +1,8 @@
 VIDEO follows ...
 
+![Case](docs/images/Case.jpeg)
+![InfoDialog)(docs/images/MacInfo.jpeg)
+
 This is a port of the minivmac project to an ESP32S3. minivmac (https://www.gryphel.com/c/minivmac/) is a Macintosh emulator for early Macs. The emulator was ported to an ESP32S3 board with a display from Waveshare (https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-2.8B). The port works very well and is fast enough to actually use the Mac, if it weren't for the very small display. 2.8 inches is very small, and you need very good eyes to see everything. 
 
 Usage:
