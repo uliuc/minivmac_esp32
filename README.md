@@ -5,6 +5,8 @@ VIDEO follows ...
 
 This is a port of the minivmac project to an ESP32S3. minivmac (https://www.gryphel.com/c/minivmac/) is a Macintosh emulator for early Macs. The emulator was ported to an ESP32S3 board with a display from Waveshare (https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-2.8B). The port works very well and is fast enough to actually use the Mac, if it weren't for the very small display. 2.8 inches is very small, and you need very good eyes to see everything. 
 
+The case you see in the pictures is by Jeroen Domburg from his minimacplus project (https://github.com/Spritetm/minimacplus).
+
 Usage:
 - The sources must be compiled with the IDF from Espressif (version 5.5). (idf.py build).
 - A MacPlus ROM (file name: vMac.ROM) and various disks (disk1.dsk to disk6.dsk) must be placed in the spiffs directory. The ROM is required for the Macintosh to start (firmware). The disks appear on the desktop after the operating system has started. disk1.dsk should, of course, be a bootable MacOS (e.g., System 7.x) startup disk.
